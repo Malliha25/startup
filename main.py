@@ -6,7 +6,7 @@ from sklearn.preprocessing import OneHotEncoder
 
 app=Flask(__name__)
 
-dataset=pd.read_csv('50_startups_MLR.csv')
+dataset=pd.read_csv('50_Startups_MLR.csv')
 X=dataset.iloc[:,:-1].values
 Y=dataset.iloc[:,-1].values
 ct=ColumnTransformer(transformers=[('encoder',OneHotEncoder(),[3])],remainder='passthrough')

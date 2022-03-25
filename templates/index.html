@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+            profit prediction system
+        </title></head>
+        <body>
+            <center>
+                <h1>
+                    Profit Prediction System
+                </h1>
+                <form action="/predict" method="POST">
+                    <label>Enter R&D Expenditure
+                    </label><br/>
+                    <input type="text" name="rd"/><br/><br/>
+                    <label>Enter administration Expenditure
+                    </label><br/>                    
+                    <input type="text" name="a"/><br/><br/>
+                    <label>Enter marketing Expenditure
+                    </label><br/>
+                    <input type="text" name="m"/><br/><br/>
+                    <label>Enter state Expenditure
+                    </label><br/>
+                    <input type="text" name="s"/><br/><br/>
+                    <input type="submit" />
+
+                </form>
+                <h2>The profit can be: 
+                    <span style="color: chocolate">{{result}}
+                </span>
+            </h2>
+            </center>
+        </body>
+    
+</html>

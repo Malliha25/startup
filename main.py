@@ -13,6 +13,7 @@ ct=ColumnTransformer(transformers=[('encoder',OneHotEncoder(),[3])],remainder='p
 X=ct.fit_transform(X)
 reg=LinearRegression()
 reg.fit(X,Y)
+print(X,Y)
 @app.route('/predict',methods=['GET'])
 def getData():
     rd=request.args.get('rd')
